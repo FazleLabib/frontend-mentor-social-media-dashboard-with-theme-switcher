@@ -19,7 +19,7 @@
   <main>
     <div class="container">
 
-      <div class="container-item">
+      <div class="container-item" id="header-container">
 
         <div class="header">
           <h1>Social Media Dashboard</h1>
@@ -38,184 +38,192 @@
 
       <div class="container-item grid" id="app-grid">
 
-        <div class="grid-item">
-          <p class="username"><span><img class="logo" 
+        <div class="grid-item" id="facebook">
+          <p class="username"><img class="logo" 
             src="./images/icon-facebook.svg" 
-            alt="Facebook logo."></span>@nathanf</p>
+            alt="Facebook logo.">@nathanf</p>
           <p class="follower-count">1987</p>
           <p class="followers">Followers</p>
-          <p class="changes-today"><span><img class="indicator" 
+          <p class="changes increase"><img class="indicator" 
             src="./images/icon-up.svg" 
-            alt="Increase indicator"></span>12 Today</p>
+            alt="Increase indicator">12 Today</p>
         </div>
 
-        <div class="grid-item">
-          <p class="username"><span><img class="logo" 
+        <div class="grid-item" id="twitter">
+          <p class="username"><img class="logo" 
             src="./images/icon-twitter.svg" 
-            alt="Twitter logo."></span>@nathanf</p>
+            alt="Twitter logo.">@nathanf</p>
           <p class="follower-count">1044</p>
           <p class="followers">Followers</p>
-          <p class="changes-today"><span><img class="indicator" 
+          <p class="changes increase"><img class="indicator" 
             src="./images/icon-up.svg" 
-            alt="Increase indicator"></span>99 Today</p>
+            alt="Increase indicator">99 Today</p>
         </div>
 
-        <div class="grid-item">
-          <p class="username"><span><img class="logo" 
+        <div class="grid-item" id="instagram">
+          <p class="username"><img class="logo" 
             src="./images/icon-instagram.svg" 
-            alt="Instagram logo."></span>@realnathanf</p>
+            alt="Instagram logo.">@realnathanf</p>
           <p class="follower-count">11k</p>
           <p class="followers">Followers</p>
-          <p class="changes-today"><span><img class="indicator" 
+          <p class="changes increase"><img class="indicator" 
             src="./images/icon-up.svg" 
-            alt="Increase indicator"></span>1099 Today</p>
+            alt="Increase indicator">1099 Today</p>
         </div>
 
-        <div class="grid-item">
-          <p class="username"><span><img class="logo" 
+        <div class="grid-item" id="youtube">
+          <p class="username"><img class="logo" 
             src="./images/icon-youtube.svg" 
-            alt="Youtube logo."></span>Nathan F.</p>
+            alt="Youtube logo.">Nathan F.</p>
           <p class="follower-count">8239</p>
           <p class="followers">Subscribers</p>
-          <p class="changes-today"><span><img class="indicator" 
+          <p class="changes decrease"><img class="indicator" 
             src="./images/icon-down.svg" 
-            alt="Decrease indicator"></span>144 Today</p>
+            alt="Decrease indicator">144 Today</p>
         </div>
 
       </div>
 
       <div class="container-item">
 
-        <h1>Overview - Today</h1>
+        <h1 id="overview-header">Overview - Today</h1>
 
         <div class="grid" id="overview-grid">
 
           <div class="grid-item">
             <p class="grid-title">Page Views 
-              <span><img class="logo" 
+              <img class="logo" 
                 src="./images/icon-facebook.svg" 
-              alt="Facebook Logo."></span>
+              alt="Facebook Logo.">
             </p>
-            <p class="stats-count">87
-              <span class="stats-percent">
-                <img class="indicator" 
-                src="./images/icon-up.svg" 
-                alt="Increase indicator.">
-                3%
-              </span>
-            </p>
+            <div class="stats">
+              <p class="stats-count">87</p>
+              <p class="stats-percent increase">
+                  <img class="indicator" 
+                  src="./images/icon-up.svg" 
+                  alt="Increase indicator.">
+                  3%
+              </p>
+            </div>
           </div>
 
           <div class="grid-item">
             
             <p class="grid-title">Likes 
-              <span><img class="logo" 
+              <img class="logo" 
                 src="./images/icon-facebook.svg" 
-              alt="Facebook Logo."></span>
+              alt="Facebook Logo.">
             </p>
-            <p class="stats-count">52
-              <span class="stats-percent">
-                <img src="./images/icon-down.svg" 
-                alt="Decrease indicator.">
-                2%
-              </span>
-            </p>
+            <div class="stats">
+              <p class="stats-count">52</p>
+              <p class="stats-percent decrease">
+                  <img src="./images/icon-down.svg" 
+                  alt="Decrease indicator.">
+                  2%
+              </p>
+            </div>
           </div>
           
           <div class="grid-item">
             <p class="grid-title">Likes
-              <span><img class="logo" 
+              <img class="logo" 
                 src="./images/icon-instagram.svg" 
-              alt="Instagram Logo."></span>
+              alt="Instagram Logo.">
             </p>
-            <p class="stats-count">5462
-              <span class="stats-percent">
-                <img class="indicator" 
-                src="./images/icon-up.svg" 
-                alt="Increase indicator.">
-                2257%
-              </span>
-            </p>
+            <div class="stats">
+              <p class="stats-count">5462</p>
+              <p class="stats-percent increase">
+                  <img class="indicator" 
+                  src="./images/icon-up.svg" 
+                  alt="Increase indicator.">
+                  2257%
+              </p>
+            </div>
           </div>
           
           <div class="grid-item">
             <p class="grid-title">Profile Views 
-              <span><img class="logo" 
+              <img class="logo" 
                 src="./images/icon-instagram.svg" 
-              alt="Instagram Logo."></span>
+              alt="Instagram Logo.">
             </p>
-            <p class="stats-count">52k
-              <span class="stats-percent">
-                <img class="indicator" 
-                src="./images/icon-up.svg" 
-                alt="Increase indicator.">
-                1375%
-              </span>
-            </p>
+            <div class="stats">
+              <p class="stats-count">52k</p>
+              <p class="stats-percent increase">
+                  <img class="indicator" 
+                  src="./images/icon-up.svg" 
+                  alt="Increase indicator.">
+                  1375%
+              </p>
+            </div>
           </div>
 
           <div class="grid-item">
             <p class="grid-title">Retweets
-              <span><img class="logo" 
+              <img class="logo" 
                 src="./images/icon-twitter.svg" 
-              alt="Twitter Logo."></span>
+              alt="Twitter Logo.">
             </p>
-            <p class="stats-count">117
-              <span class="stats-percent">
-                <img class="indicator" 
-                src="./images/icon-up.svg" 
-                alt="Increase indicator.">
-                303%
-              </span>
-            </p>
+            <div class="stats">
+              <p class="stats-count">117</p>
+              <p class="stats-percent increase">
+                  <img class="indicator" 
+                  src="./images/icon-up.svg" 
+                  alt="Increase indicator.">
+                  303%
+              </p>
+            </div>
           </div>
 
           <div class="grid-item">
             <p class="grid-title">Likes
-              <span><img class="logo" 
+              <img class="logo" 
                 src="./images/icon-twitter.svg" 
-              alt="Twitter Logo."></span>
+              alt="Twitter Logo.">
             </p>
-            <p class="stats-count">507
-              <span class="stats-percent">
-                <img class="indicator" 
-                src="./images/icon-up.svg" 
-                alt="Increase indicator.">
-                553%
-              </span>
-            </p>
+            <div class="stats">
+              <p class="stats-count">507</p>
+              <p class="stats-percent increase">
+                  <img class="indicator" 
+                  src="./images/icon-up.svg" 
+                  alt="Increase indicator.">
+                  553%
+              </p>
+            </div>
           </div>
 
           <div class="grid-item">
             <p class="grid-title">Likes 
-              <span><img class="logo" 
+              <img class="logo" 
                 src="./images/icon-youtube.svg" 
-              alt="Youtube Logo."></span>
+              alt="Youtube Logo.">
             </p>
-            <p class="stats-count">107
-              <span class="stats-percent">
-                <img class="indicator" 
-                src="./images/icon-down.svg" 
-                alt="Decrease indicator.">
-                19%
-              </span>
-            </p>
+            <div class="stats">
+              <p class="stats-count">107</p>
+              <p class="stats-percent decrease">
+                  <img class="indicator" 
+                  src="./images/icon-down.svg" 
+                  alt="Decrease indicator.">
+                  19%
+              </p>
+            </div>
           </div>
 
           <div class="grid-item">
             <p class="grid-title">Total Views
-              <span><img class="logo" 
+              <img class="logo" 
                 src="./images/icon-youtube.svg" 
-              alt="Youtube Logo."></span>
+              alt="Youtube Logo.">
             </p>
-            <p class="stats-count">1407
-              <span class="stats-percent">
-                <img class="indicator" 
-                src="./images/icon-down.svg" 
-                alt="Decrease indicator.">
-                12%
-              </span>
-            </p>
+            <div class="stats">
+              <p class="stats-count">1407</p>
+              <p class="stats-percent decrease">
+                  <img class="indicator" 
+                  src="./images/icon-down.svg" 
+                  alt="Decrease indicator.">
+                  12%
+              </p>
+            </div>
           </div>
 
         </div>
