@@ -137,7 +137,6 @@ p, label {
 }
   
 input:checked + .switch-slider {
-    background-image: none;
     background-color: var(--toggle-light);
 }
 
@@ -146,7 +145,7 @@ input:checked + .switch-slider:before {
 }
   
 input:focus + .switch-slider {
-    box-shadow: 0 0 1px blue;
+    box-shadow: 0 0 1px var(--white);
 }
   
 input:checked + .switch-slider:before {
